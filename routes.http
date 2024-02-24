@@ -1,0 +1,27 @@
+POST http://127.0.0.1:3333/videos
+Content-type: application/json
+
+{
+    "title": "2",
+    "description": "Esse é o video 1",
+    "duration": 100
+}
+
+###
+
+GET  http://127.0.0.1:3333/videos?search=node
+
+###
+
+PUT  http://127.0.0.1:3333/videos/40f4c3c4-f4e9-4856-ad91-6306ce1b2f0d
+Content-type: application/json
+
+
+{
+    "title": "Video node 02",
+    "description": "Esse é o video 1",
+    "duration": 100
+}
+###
+
+DELETE  http://127.0.0.1:3333/videos/40f4c3c4-f4e9-4856-ad91-6306ce1b2f0d
